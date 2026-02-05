@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Times, serif;
+    padding: 20px;
+    background-color: #FFFFD4;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    border: 2px solid brown;
+    background-color: white;
+    color: #555;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+header {
+    background-image: url(../img/fejlec_predikaloszek_1024x303.png);
+    text-align: center;
+    color: beige;
+    width: 100%;
+    height: 50vh;
+}
+
+h1 {
+    padding: 15%;
+}
+
+nav {
+    background-color:  #FF7F2A;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    margin: auto 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: bold;
+}
+
+nav li a:hover {
+    background-color:  #BF153F;
+    border-radius: 5px;
+
+}
+
+article {
+    margin: 3%;
+    font-size: 1.2rem;  
+    overflow: hidden;
+}
+
+article h2, h3 {
+    margin: 2% 0;
+}
+
+.cikk {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+    margin: 1% 0;
+}
+
+img {
+    float: right;
+    width: 30%;
+    margin: 10px;
+}
+
+hr {
+    clear: both;   
+    margin: 20px 0; 
+    border: none;  
+    border-top: 1px solid brown; 
+}

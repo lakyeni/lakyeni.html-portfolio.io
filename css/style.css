@@ -1,0 +1,41 @@
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  text-align: center;
+  width: 120px; /* Beállíthatod a szélességet, hogy egységesek legyenek */
+}
+
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.project-name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-date {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+}
