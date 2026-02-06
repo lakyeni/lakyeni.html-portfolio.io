@@ -1,0 +1,50 @@
+.blue {
+    width: 600px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+    border: 2px solid black;
+    z-index: 5;
+}
+
+.white {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    left: 200px;
+}
+
+.red {
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+    left: 400px;
+    }
+
+.red p {
+    color: white;
+    text-align: center;
+   }
+
+.info{
+    width:200px;
+    height: 300px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    }
+
+.info ul {
+    font-size: 12pt;
+    font-style: oblique;
+    }
+
+p {
+    color: black; 
+    font-size: large;
+    font-style: oblique;
+    text-size-adjust: 12pt;
+    text-align: left;
+}

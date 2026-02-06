@@ -1,0 +1,61 @@
+/* header */
+
+* {
+  padding:0;
+  margin: 0;
+}
+
+h1{
+    color: white;
+    margin-block-end: 0;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-block-end: 0;
+}
+
+header  {
+    height: 80rem;
+    background-image: url("../img/truck_main_01_1920x1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+.navbar a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar a:focus {
+  border: 2px solid blue;
+}
+
+
