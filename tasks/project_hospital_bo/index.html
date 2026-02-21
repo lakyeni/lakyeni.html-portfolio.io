@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedCare Hospital | Back Office</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/webp" href="./icons/doctor_icon.svg" />
+    <link rel="stylesheet" href="./css/animation.css">
+  </head>
+  <body>
+    <nav class="top">
+      <div class="logo-container">
+        <img
+          src="./icons/medicare_logo.webp"
+          alt="MedCare Hospital Logo"
+          width="50"
+        />
+        <p>MedCare | Back Office</p>
+        <img class="tel" src="./icons/tel.svg" alt="Telefonszám" width="50" />
+        <p>+36 30 381 9404</p>
+      </div>
+      <ul class="nav-links">
+        <li class="login-menu"><a href="./index.html">Főoldal</a></li>
+        <li class="login-menu">
+          <a href="#">Bejelentkezés</a>
+          <div class="login-popup">
+            <form action="#" method="POST">
+              <label for="username">Felhasználónév:</label>
+              <input type="text" id="username" name="username" /><br />
+              <label for="password">Jelszó:</label>
+              <input type="password" id="password" name="password" /><br />
+              <button type="submit">Belépés</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!--Üdvözlő üzenet -->
+    <header>
+      <div class="header-container">
+        <div class="welcome-message">
+          <h1>Üdvözöljük a MedCare Back Office-ban!</h1>
+          <h2>Jó munkát kívánunk!</h2>
+        </div>
+
+        <!--Header kép-->
+        <div class="header-image">
+          <img
+            src="./img/docors_header_img.webp"
+            alt="Kórház Back Office"
+            width="500"
+          />
+        </div>
+      </div>
+    </header>
+    <!--Fő tartalom -->
+    <main class="main-container">
+      <!-- Friss hírek -->
+      <section class="news">
+        <h2>Friss hírek</h2>
+        <div class="news-container">
+          <div class="news-item">
+            <h3>Új orvosi eszközök érkeznek</h3>
+            <div class="label">
+              <span class="badge">Ambulancia</span>
+              <span class="badge">Kardiológia</span>
+            </div>
+            <p>
+              Az új orvosi eszközök érkezése jövő héten esedékes, használatuk
+              oktatása a következő hónapban történik. Oktatásra jelentkezni
+              bejelentkezés után az "Oktatások" menüpont alatt lehetséges
+            </p>
+            <a href="#" class="read-more">Tovább olvasom</a>
+          </div>
+          <div class="news-item">
+            <h3>Ágykapacitás bővítése</h3>
+            <div class="label">
+              <span class="badge">Belgyógyászat</span>
+            </div>
+            <p>
+              Ágybővítési munkák folyamatban vannak a belgyógyászati osztályon.
+              A munkák befejezése után az ágykapacitás 15%-kal nő.
+            </p>
+            <a href="#" class="read-more">Tovább olvasom</a>
+          </div>
+          <div class="news-item">
+            <h3>Béremelés</h3>
+            <div class="label">
+              <span class="badge">Alkalmazottak</span>
+            </div>
+            <p>
+              A béremelésről szóló döntés értelmében a kórház minden dolgozója
+              10%-os fizetésemelést kap a következő hónaptól. A részletekről
+              hamarosan tájékoztatást adunk.
+            </p>
+            <a href="#" class="read-more">Tovább olvasom</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kórházi jelentés -->
+      <section class="dashboard">
+        <h2>Kórházi jelentés</h2>
+        <div class="dashboard-container">
+          <div class="dashboard-item">
+            <h3>Új orvosi eszközök érkeznek</h3>
+            <div class="label">
+              <span class="badge">Ambulancia</span>
+              <span class="badge">Kardiológia</span>
+            </div>
+            <p>
+              Az új orvosi eszközök érkezése jövő héten esedékes, használatuk
+              oktatása a következő hónapban történik. Oktatásra jelentkezni
+              bejelentkezés után az "Oktatások" menüpont alatt lehetséges
+            </p>
+            <a href="#" class="read-more">Tovább olvasom</a>
+          </div>
+          <div class="dashboard-item">
+            <h3>Ágykapacitás bővítése</h3>
+            <div class="label">
+              <span class="badge">Belgyógyászat</span>
+            </div>
+            <p>
+              Ágybővítési munkák folyamatban vannak a belgyógyászati osztályon.
+              A munkák befejezése után az ágykapacitás 15%-kal nő.
+            </p>
+            <a href="#" class="read-more">Tovább olvasom</a>
+          </div>
+          <div class="dashboard-item">
+            <h3>Béremelés</h3>
+            <div class="label">
+              <span class="badge">Alkalmazottak</span>
+            </div>
+            <p>
+              A béremelésről szóló döntés értelmében a kórház minden dolgozója
+              10%-os fizetésemelést kap a következő hónaptól. A részletekről
+              hamarosan tájékoztatást adunk.
+            </p>
+            <a href="#" class="read-more">Tovább olvasom</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Oldalsó menü | Osztályok -->
+      <div class="side">
+        <ul>
+          <li>
+            <img
+              src="./icons/Emergency_Department_Logo.webp"
+              alt="Ambulancia"
+              title="Ambulancia"
+              width="50"
+            />
+            <a href="./ambulancia.html"><span>Ambulancia</span></a>
+          </li>
+          <li>
+            <img
+              src="./icons/Radiology_Department_Logo.webp"
+              alt="Radiológia"
+              title="Radiológia"
+              width="50"
+            />
+            <span>Radiológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Medical_Laboratories_Department_Logo.webp"
+              alt="Laboratórium"
+              title="Laboratórium"
+              width="50"
+            />
+            <span>Laboratórium</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Traumatology_Department_Logo.webp"
+              alt="Traumatológia"
+              title="Traumatológia"
+              width="50"
+            />
+            <span>Traumatológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Internal_Medicine_Department_Logo.webp"
+              alt="Belgyógyászat"
+              title="Belgyógyászat"
+              width="50"
+            />
+            <span>Belgyógyászat</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Cardiology_Department_Logo.webp"
+              alt="Kardiológia"
+              title="Kardiológia"
+              width="50"
+            />
+            <span>Kardiológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/General_Surgery_Department_Logo.webp"
+              alt="Sebészet"
+              title="Sebészet"
+              width="50"
+            />
+            <span>Sebészet</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Orthopaedic_Department_Logo.webp"
+              alt="Ortopédia"
+              title="Ortopédia"
+              width="50"
+            />
+            <span>Ortopédia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Neurology_Department_Logo.webp"
+              alt="Neurológia"
+              title="Neurológia"
+              width="50"
+            />
+            <span>Neurológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Gynecology_and_Obstetrics_Department_Logo.webp"
+              alt="Nőgyógyászat"
+              title="Nőgyógyászat"
+              width="50"
+            />
+            <span>Nőgyógyászat</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>&copy; 2024 MedCare Hospital. Minden jog fenntartva.</p>
+    </footer>
+  </body>
+</html>

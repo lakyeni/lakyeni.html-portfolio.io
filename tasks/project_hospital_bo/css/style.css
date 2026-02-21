@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #e0f7fa;
+  color: black;
+  font-size: 1rem;
+}
+nav.top {
+  background-color: #0288d1;
+  color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 100;
+}
+
+nav.top .tel {
+  margin-left: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 10px;
+}
+
+nav.top ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav.top li {
+  margin-left: 20px;
+}
+
+nav.top a {
+  padding: 22px;
+  text-decoration: none;
+  color: white;
+}
+/* Bejelentkezés */
+.login-menu {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Link hover effektus */
+.login-menu:hover {
+  color: black;
+  background-color: #5555553b;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Popup elrejtése alapértelmezetten */
+.login-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  padding: 15px;
+  background-color: #0288d1;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  color: white;
+}
+
+/* Ha a login-menu fölé viszik az egeret, akkor jelenjen meg a login-popup */
+.login-menu:hover .login-popup {
+  display: block;
+}
+
+.login-popup button {
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.login-popup button:hover {
+  background-color: #5555553b;
+  color: white;
+}
+
+/* header rész */
+
+div.header-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 25px solid #0288d1;
+}
+
+/* main */
+
+main.main-container {
+  display: grid;
+  grid-template-columns: 85px auto;
+  grid-template-rows: 2fr auto;
+}
+
+/*Friss hírek */
+
+section.news {
+  width: auto;
+  margin: 10px;
+  background-color: #0289d183;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+section.news h2 {
+  font-size: 1.5rem;
+  padding: 0px 10px 10px 10px;
+  color: white;
+  text-shadow: rgba(191, 207, 206, 0.555);
+}
+
+div.news-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.news-container h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.news-item {
+  margin-bottom: 15px;
+  background-color: rgba(191, 207, 206, 0.555);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Kórházi jelentés */
+
+section.dashboard {
+  width: auto;
+  margin: 10px;
+}
+
+section.dashboard h2 {
+  font-size: 1.5rem;
+  padding: 0px 10px 10px 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgba(191, 207, 206, 0.555);
+}
+
+div.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div.dashboard-item {
+  margin-bottom: 15px;
+  background-color: rgba(191, 207, 206, 0.555);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*címkék*/
+
+div.label {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+span.badge {
+  background-color: #0289d183;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* oldalsó menü */
+
+div.side {
+  background-color: #0288d1;
+  color: white;
+  width: 85px;
+  padding: 5px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  grid-row: 1/3;
+}
+
+div.side li a {
+  text-decoration: none;
+  color: white;
+}
+
+div.side li a:hover {
+  color: black;
+}
+
+div.side li {
+  list-style-type: none;
+}
+
+div.side li:hover {
+  width: 75px;
+}
+
+div.side span {
+  display: none;
+  background-color: #0288d1;
+  width: 110px;
+  height: 50px;
+  font-size: 1rem;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 58px;
+}
+
+div.side li:hover span {
+  display: inline-block;
+}
+
+footer {
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Osztályállapot */
+
+div.department-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.department-container h3 {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+section.department {
+  width: auto;
+  margin: 10px;
+  background-color: #0289d183;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+section.department h2 {
+  margin-bottom: 10px;
+}
+
+.department-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: rgba(191, 207, 206, 0.555);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* betegfelvétel */
+
+section.form {
+  width: auto;
+  margin: 10px;
+}
+
+section.form h2 {
+  font-size: 1.5rem;
+  padding: 0px 10px 10px 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgba(191, 207, 206, 0.555);
+}
+
+div.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div.personal-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: rgba(191, 207, 206, 0.555);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.personal-data-blood {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: rgba(191, 207, 206, 0.555);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.blood-options {
+  display: flex;
+  gap: 10px
+}
+
+div.personal-data input,
+select {
+  width: 70%;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 5px;
+}
+
+label {
+  width: 30%;
+  padding: 10px;
+}
+
+div.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+div.action-buttons button {
+  background-color: #0288d1;
+  color: white;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+div.action-buttons button:hover {
+  color: black;
+  background-color: #5555553b;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}

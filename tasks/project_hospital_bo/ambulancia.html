@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedCare Hospital | Back Office</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/webp" href="./icons/doctor_icon.svg" />
+    <link rel="stylesheet" href="./css/animation.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="logo-container">
+        <img
+          src="./icons/medicare_logo.webp"
+          alt="MedCare Hospital Logo"
+          width="50"
+        />
+        <p>MedCare | Back Office</p>
+        <img class="tel" src="./icons/tel.svg" alt="Telefonszám" width="50" />
+        <p>+36 30 381 9404</p>
+      </div>
+      <ul class="nav-links">
+        <li class="login-menu"><a href="./index.html">Főoldal</a></li>
+        <li class="login-menu">
+          <a href="#">Bejelentkezés</a>
+          <div class="login-popup">
+            <form action="#" method="POST">
+              <label for="username">Felhasználónév:</label>
+              <input type="text" id="username" name="username" /><br />
+              <label for="password">Jelszó:</label>
+              <input type="password" id="password" name="password" /><br />
+              <button type="submit">Belépés</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!--Üdvözlő üzenet -->
+    <header>
+      <div class="header-container">
+        <div class="welcome-message">
+          <h1>Ambulancia Back Office</h1>
+          <h2>Jó munkát kívánunk!</h2>
+        </div>
+
+        <!--Header kép-->
+        <div class="header-image">
+          <img
+            src="./img/docors_header_img.webp"
+            alt="Kórház Back Office"
+            width="500"
+          />
+        </div>
+      </div>
+    </header>
+    <!--Fő tartalom -->
+    <main class="main-container">
+      <!-- Friss hírek -->
+      <section class="department">
+        <h2>Osztályállapot</h2>
+        <div class="department-container">
+          <div class="department-item">
+            <h3>Várakozó betegek:</h3>
+            <div class="label">
+              <span class="badge" style="font-size: 2rem">12</span>
+            </div>
+          </div>
+          <div class="department-item">
+            <h3>Ellátott betegek:</h3>
+            <div class="label">
+              <span class="badge" style="font-size: 2rem">7</span>
+            </div>
+          </div>
+          <div class="department-item">
+            <h3>Ügyeletes orvos:</h3>
+            <div class="label">
+              <span class="badge" style="font-size: 1rem"
+                >Dr. Kovács Péter</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Betegfelvétel -->
+      <section class="form">
+        <h2>Betegfelvétel</h2>
+        <div class="form-container">
+          <form action="#" method="post">
+            <!-- név-->
+            <div class="personal-data">
+              <label for="lname">Vezetéknév</label>
+              <input type="text" id="lname" name="lname" required />
+              <label for="fname">Keresztnév</label>
+              <input type="text" id="fname" name="fname" required />
+            </div>
+            <!--születési dátum, nem-->
+            <div class="personal-data">
+              <label for="birthdate">Születési dátum</label>
+              <input type="date" id="birthdate" name="birthdate" required />
+              <label for="gender">Nem</label>
+              <select id="gender" name="gender" required>
+                <option value="man">Férfi</option>
+                <option value="woman">Nő</option>
+              </select>
+            </div>
+            <!--elérhetőség-->
+            <div class="personal-data">
+              <label for="email">Email cím</label>
+              <input type="email" id="email" name="email" />
+              <label for="phone">Telefonszám</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+36-20-123-4567"
+              />
+            </div>
+            <!--Lakcím-->
+            <div class="personal-data">
+              <label for="address">Lakcím</label>
+              <textarea
+                id="address"
+                name="address"
+                rows="2"
+                placeholder="Irányítószám, város, utca, házszám"
+              ></textarea>
+            </div>
+            <!--Egészségügyi adatok-->
+            <div class="personal-data-blood">
+              <label for="bloodtype">Vércsoport</label>
+              <div class="blood-options">
+                <div>
+                  <input type="radio" id="Aplus" name="bloodtype" value="A+" />
+                  <label for="Aplus">A+</label>
+                </div>
+                <div>
+                  <input type="radio" id="Aminus" name="bloodtype" value="A-" />
+                  <label for="Aminus">A-</label>
+                </div>
+                <div>
+                  <input type="radio" id="Bplus" name="bloodtype" value="B+" />
+                  <label for="Bplus">B+</label>
+                </div>
+                <div>
+                  <input type="radio" id="Bminus" name="bloodtype" value="B-" />
+                  <label for="Bminus">B-</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="ABplus"
+                    name="bloodtype"
+                    value="AB+"
+                  />
+                  <label for="ABplus">AB+</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="Abminus"
+                    name="bloodtype"
+                    value="AB-"
+                  />
+                  <label for="ABminus">AB-</label>
+                </div>
+                <div>
+                  <input type="radio" id="0plus" name="bloodtype" value="0+" />
+                  <label for="0plus">0+</label>
+                </div>
+                <div>
+                  <input type="radio" id="0minus" name="bloodtype" value="0-" />
+                  <label for="0minus">0-</label>
+                </div>
+              </div>
+            </div>
+            <!--allergiák-->
+            <div class="personal-data">
+              <label for="allergies">Allergiák</label>
+              <textarea
+                id="allergies"
+                name="allergies"
+                rows="3"
+                placeholder="pl. pollen, gyógyszerek"
+              ></textarea>
+            </div>
+            <!--krónikus betegségek, tünetek -->
+            <div class="personal-data">
+              <label for="conditions">Krónikus betegségek, tünetek</label>
+              <textarea id="conditions" name="conditions" rows="3"></textarea>
+            </div>
+            <!--leadás-->
+            <div class="action-buttons">
+            <button type="reset">Adatok törlése</button>
+            <button type="submit">Beteg felvétele</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Oldalsó menü | Osztályok -->
+      <div class="side">
+        <ul>
+          <li>
+            <img
+              src="./icons/Emergency_Department_Logo.webp"
+              alt="Ambulancia"
+              title="Ambulancia"
+              width="50"
+            />
+            <a href="./ambulancia.html"><span>Ambulancia</span></a>
+          </li>
+          <li>
+            <img
+              src="./icons/Radiology_Department_Logo.webp"
+              alt="Radiológia"
+              title="Radiológia"
+              width="50"
+            />
+            <span>Radiológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Medical_Laboratories_Department_Logo.webp"
+              alt="Laboratórium"
+              title="Laboratórium"
+              width="50"
+            />
+            <span>Laboratórium</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Traumatology_Department_Logo.webp"
+              alt="Traumatológia"
+              title="Traumatológia"
+              width="50"
+            />
+            <span>Traumatológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Internal_Medicine_Department_Logo.webp"
+              alt="Belgyógyászat"
+              title="Belgyógyászat"
+              width="50"
+            />
+            <span>Belgyógyászat</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Cardiology_Department_Logo.webp"
+              alt="Kardiológia"
+              title="Kardiológia"
+              width="50"
+            />
+            <span>Kardiológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/General_Surgery_Department_Logo.webp"
+              alt="Sebészet"
+              title="Sebészet"
+              width="50"
+            />
+            <span>Sebészet</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Orthopaedic_Department_Logo.webp"
+              alt="Ortopédia"
+              title="Ortopédia"
+              width="50"
+            />
+            <span>Ortopédia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Neurology_Department_Logo.webp"
+              alt="Neurológia"
+              title="Neurológia"
+              width="50"
+            />
+            <span>Neurológia</span>
+          </li>
+          <li>
+            <img
+              src="./icons/Gynecology_and_Obstetrics_Department_Logo.webp"
+              alt="Nőgyógyászat"
+              title="Nőgyógyászat"
+              width="50"
+            />
+            <span>Nőgyógyászat</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>&copy; 2024 MedCare Hospital. Minden jog fenntartva.</p>
+    </footer>
+  </body>
+</html>

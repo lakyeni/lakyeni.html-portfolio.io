@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(243, 244, 244);
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: yellow;
+    font-size: 3rem;
+    margin-top: 2%; 
+    margin-left: 1%;
+    margin-right: 1%; 
+}
+
+header h2 {
+    color: yellow;
+    font-size: 1.5rem;
+    margin: 1% 0% 2% 0%;
+    letter-spacing: 0.3rem;
+    
+}
+
+h3 {text-align: left;
+    color:rgb(235, 235, 80); 
+}   
+    
+/*navigation */
+nav {
+    background-color: yellow;
+    width: auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+li a:hover {
+    background-color: rgb(243, 244, 244);
+}
+
+
+
+/*main container */
+.container {
+    width: 60%;
+    margin: auto;
+}
+/*section metzing*/
+
+.metzing {
+    margin: 5% 0;
+    text-align: left;
+}
+
+.metzing h2 {
+    text-align: center;
+}
+
+.metzing p {
+    margin: 5% 0;
+    font-size: 1.2rem;  
+}
+
+.metzing ol {
+    padding: 2%;
+    font-size: 1.2rem;
+}
+
+.section {
+    clear: both;
+    display: block;
+}
+
+.section h2 {
+    background-color: rgb(255, 249, 198, 0.1);
+    text-align: left;
+    padding: 5% 0;
+    border: 1px solid;
+    border-color: yellow;
+    border-radius: 10%;
+    color: yellow;
+    font-size: 1.5rem;
+    margin: 1% 0% 2% 0%;
+    text-align: center;
+}
+
+.card-one {
+    padding: 5%;
+    font-size: 1rem;
+    max-width: 45%;
+    text-align: left;
+    float: left;
+    
+}
+
+.card-one ul li {
+    padding-left: 5%;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.card-gif {
+    padding: 5%;
+    max-width: 40%;
+    float: inline-end;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+}
+
+
